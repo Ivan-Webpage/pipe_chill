@@ -126,8 +126,8 @@
                         "\n遊戲帳號：" + document.getElementById("login1").value +
                         "\n儲值金額：" + document.getElementById("money_nt").value +
                         "\n儲值方式：" + document.getElementById("method").value;
-                    // sendTextMessages(message);
                     sendLineNotify(message);
+                    sendTextMessages("已將儲值需求送出瞜！請耐心等待");
                     liff.closeWindow();
                 });
             })
@@ -147,8 +147,9 @@
                         "\n會員本人姓名：" + document.getElementById("real_name").value +
                         "\n銀行代碼/名稱：" + document.getElementById("bank_nbr").value + '/' + document.getElementById("bank_name").value +
                         "\n分行代碼/名稱：" + document.getElementById("deparment_nbr").value + '/' + document.getElementById("deparment_name").value;
-                    // sendTextMessages(message);
+                    
                     sendLineNotify(message);
+                    sendTextMessages("已將出金需求送出瞜！請耐心等待");
                     liff.closeWindow();
                 });
             })
