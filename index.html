@@ -90,7 +90,7 @@
                 text: word
             },{
                 type: 'text',
-                text: '請將以上訊息留言給草版官方，才能幫您作業喔！⬇️⬇️⬇️⬇️⬇️https://liff.line.me/1645278921-kWRPP32q/?accountId=bkd3653t'
+                text: '請將以上訊息留言給草版官方，才能幫您作業喔！\n⬇️⬇️⬇️⬇️⬇️\n\nhttps://liff.line.me/1645278921-kWRPP32q/?accountId=bkd3653t'
             }
 
         ])
@@ -104,8 +104,7 @@
                 liffId: "1661067197-ZKlkLRGP",
             }).then(function () {
                 liff.getProfile().then(profile => {
-                    var message = "\n申請者：" + profile.displayName +
-                        "\n平台：草版\n代理線：" + document.getElementById("acting1").value +
+                    var message = "平台：草版\n代理線：" + document.getElementById("acting1").value +
                         "\n遊戲帳號：" + document.getElementById("login1").value +
                         "\n儲值金額：" + document.getElementById("money_nt").value +
                         "\n儲值方式：" + document.getElementById("method").value;
@@ -122,8 +121,7 @@
                 liffId: "1661067197-ZKlkLRGP",
             }).then(function () {
                 liff.getProfile().then(profile => {
-                    var message = "\n申請者：" + profile.displayName +
-                        "\n平台：草版\n代理線：" + document.getElementById("acting1").value +
+                    var message = "平台：草版\n代理線：" + document.getElementById("acting1").value +
                         "\n遊戲帳號：" + document.getElementById("login2").value +
                         "\n出金點數（草幣）：" + document.getElementById("money_cao").value +
                         "\n會員本人姓名：" + document.getElementById("real_name").value +
