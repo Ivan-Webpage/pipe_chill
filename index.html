@@ -18,12 +18,12 @@
         <div class="row">
 
             <form id="from1" style="display: none;">
-                <div class="input-group mb-3">
+                <!-- <div class="input-group mb-3">
                     <span class="input-group-text  span-text">代理線</span>
                     <select class="form-select" id="acting1">
                         <option value="0857CHILL">0857CHILL</option>
                     </select>
-                </div>
+                </div> -->
                 <div class="input-group mb-3">
                     <span class="input-group-text span-text">遊戲帳號</span>
                     <input type="text" class="form-control" placeholder="0857CHILL001" id="login1">
@@ -44,12 +44,12 @@
         </div>
         <div class="row">
             <form id="from2" style="display: none;">
-                <div class="input-group mb-3">
+                <!-- <div class="input-group mb-3">
                     <span class="input-group-text  span-text">代理線</span>
                     <select class="form-select" id="acting2">
                         <option value="0857CHILL">0857CHILL</option>
                     </select>
-                </div>
+                </div> -->
                 <div class="input-group mb-3">
                     <span class="input-group-text span-text">遊戲帳號</span>
                     <input type="text" class="form-control" placeholder="0857CHILL001" id="login2">
@@ -104,7 +104,7 @@
                 liffId: "1661067197-ZKlkLRGP",
             }).then(function () {
                 liff.getProfile().then(profile => {
-                    var message = "平台：草版\n代理線：" + document.getElementById("acting1").value +
+                    var message = "平台：草版\n代理線：E63SCHILL" + //document.getElementById("acting1").value +
                         "\n遊戲帳號：" + document.getElementById("login1").value +
                         "\n儲值金額：" + document.getElementById("money_nt").value +
                         "\n儲值方式：" + document.getElementById("method").value;
@@ -121,7 +121,7 @@
                 liffId: "1661067197-ZKlkLRGP",
             }).then(function () {
                 liff.getProfile().then(profile => {
-                    var message = "平台：草版\n代理線：" + document.getElementById("acting1").value +
+                    var message = "平台：草版\n代理線：E63SCHILL" + //document.getElementById("acting2").value +
                         "\n遊戲帳號：" + document.getElementById("login2").value +
                         "\n出金點數（草幣）：" + document.getElementById("money_cao").value +
                         "\n會員本人姓名：" + document.getElementById("real_name").value +
