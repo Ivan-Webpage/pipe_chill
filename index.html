@@ -72,6 +72,10 @@
                     <input type="number" class="form-control" placeholder="6719" id="deparment_nbr">
                     <input type="text" class="form-control" placeholder="中港分行" id="deparment_name">
                 </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text span-text">銀行帳戶</span>
+                    <input type="text" class="form-control" placeholder="00000123456789" id="bank_id">
+                </div>
                 <button type="button" class="btn span-text send-button" onclick="send2()">確認送出</button>
             </form>
         </div>
@@ -126,7 +130,8 @@
                         "\n出金點數（草幣）：" + document.getElementById("money_cao").value +
                         "\n會員本人姓名：" + document.getElementById("real_name").value +
                         "\n銀行代碼/名稱：" + document.getElementById("bank_nbr").value + '/' + document.getElementById("bank_name").value +
-                        "\n分行代碼/名稱：" + document.getElementById("deparment_nbr").value + '/' + document.getElementById("deparment_name").value;
+                        "\n分行代碼/名稱：" + document.getElementById("deparment_nbr").value + '/' + document.getElementById("deparment_name").value +
+                        "\n銀行帳戶：" + document.getElementById("bank_id").value; 
                     sendTextMessages(message);
                     liff.closeWindow();
                 });
